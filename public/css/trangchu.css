@@ -1,0 +1,165 @@
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    height: 10%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+/*  */
+.wrap{
+    margin-top: 20px;
+}
+.box-1{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.img-m{
+    width: 50%;
+    padding: 0 15px;
+    position: relative;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}
+.img-m img{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.img-m:hover {
+	opacity: 0.7;
+	transition: all 0.5s ease-in-out;
+	transform: scale(1.05);
+}
+
+/*  */
+
+.title1{
+    border-bottom: 1px solid #FF6E01;
+    margin-bottom: 20px;
+    margin-left: 1px;
+}
+.title1 h1{
+    font-family: Tahoma;
+    background: #FF6E01;
+    font-size: 18px;
+    padding: 15px 30px;
+    display: inline-block;
+}
+.title1 h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.box-21{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.box-product{
+    padding: 4px;
+    margin: 8px;
+    min-height: 220px;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+}
+/* anh */
+.box-img img{
+    width: 100%;
+}
+.box-img img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+.box-product h3{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 42px;
+    padding: 0 4px;
+    margin-top: 20px;
+}
+.box-product h3 a{
+    color: black;
+    text-decoration: none;
+}
+/* nhan */
+.lable-0{
+    color: #F62022;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+}
+/* gia */
+.price{
+    font-size: 16px;
+    font-weight: bold;
+    color: #F62022;
+    padding-top: 8px;
+}
+
+/* responsive */
+
+@media only screen and (max-width:768px) and (min-width:576px){
+    .container{
+        padding: 0;
+    }
+    
+    .box-21{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width:575px){
+    .container{
+        padding: 0;
+    }
+    .box-1{
+        display: block;
+    }
+    .img-m{
+        width: 100%;
+    }
+    .box-21{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+}
+
