@@ -28,7 +28,7 @@
                 <div class="header-1">
                     <div class="header-logo">
                         <ul>
-                            <li id="icon-bar"><i class="fa fa-bars"  ></i></li>
+                            <li id="icon-bar"><i class="fa fa-bars" onclick="menutoggle()"></i></li>
                             <li><a href=""><img src="{{ asset('images/logoonpic.png') }}" alt="logo"></a></li>
                             <li id="icon-carts"> <i class="fa fa-shopping-cart" ></i></li>
                         </ul>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="header-2">
                     <div class="header-21">
-                        <ul>
+                        <ul id="MenuItems">
                             <li><a href="">HOME</a></li>
                             <li><a href="">VERTU</a>
                                 <ul class="dropdown">
