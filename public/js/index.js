@@ -1,10 +1,6 @@
-var MenuItems = document.getElementById("MenuItems");
-MenuItems.style.maxHeight = "0px";
-function menutoggle(){
-    if(MenuItems.style.maxHeight == "0px"){
-        MenuItems.style.maxHeight = "400px";
-    }
-    else{
-        MenuItems.style.maxHeight = "0px";
-    }
-}
+$(document).ready(function(){
+    $('.fa-bars').click(function(){
+        console.log('ok')
+        $('.header-21').toggleClass('visible');
+    });
+});

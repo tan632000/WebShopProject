@@ -192,6 +192,7 @@ ul{
         overflow: hidden;
         background-color: black;
         width: 200px;
+        z-index: 99;
         height: 100%;
         position: fixed;
         left: -200px;
