@@ -113,7 +113,7 @@
                         <i class="fa fa-search" ></i>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
         <div class="py-4">
             @yield('content')

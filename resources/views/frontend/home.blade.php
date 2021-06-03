@@ -9,6 +9,7 @@
         <a href=""><img src="{{ asset('images/slide3.jpg') }}" ></a>
         <a href=""><img src="{{ asset('images/slide1.jpg') }}" ></a>
     </figure>
+</div>
 <div class="wrap">
     <div class="container">
         <div class="box-1">
@@ -49,7 +50,6 @@
                     <div class="lable-0">RL 01</div>
                     <div class="price">750 Triệu</div>
                 </div>
-        
                 <div class="box-product">
                     <div class="box-img">
                         <a href=""><img src="{{ asset('images/rolex5.jpg') }}" alt=""></a>
