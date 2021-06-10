@@ -1,0 +1,83 @@
+/* dich vu, kham pha */
+.box-new{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.box-new1{
+    min-height: 400px;
+    font-size: 12px;
+    margin: 10px;
+}
+.box-new1 img{
+    max-height: 200px;
+    /* width: 100%; */
+}
+.box-new h3{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    text-decoration: none;
+    height: 62px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.box-new a{
+    color: black;
+    text-decoration: none;
+}
+
+/* lien he */
+
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact strong{
+    font-size: 20px;
+}
+.contact1 span{
+    color: #FF8C00;
+    font-size: 12px;
+}
+.contact table{
+    width: 100%;
+}
+.contact1 table td{
+    height: 30px;
+}
+.contact table input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    height: 24px;
+    border: 1px solid #D3D3D3;
+    color: black;
+}
+.contact table textarea{
+    border: 1px solid #D3D3D3;
+}
+.contact1 button{
+    background: #585656;
+    border: none;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    width: 80px;
+    height: 25px;
+}
+@media only screen and (max-width:768px) and (min-width:576px){
+    .box-new{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+}
+@media only screen and (max-width:575px){
+    .box-new{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

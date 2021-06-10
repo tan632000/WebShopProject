@@ -19,6 +19,8 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/trangchu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/numen.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/numen2.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90d684ab4f.js"></script>
 </head>
 <body>
@@ -115,7 +117,7 @@
                 </div>
             </div>  
         </div>
-        <div class="py-4">
+        <div >
             @yield('content')
         </div>
         <div class="footer">

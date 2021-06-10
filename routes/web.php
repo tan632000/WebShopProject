@@ -25,3 +25,28 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/trangchu', function () {
     return view('frontend.home');
 });
+
+Route::get('/vertu', function () {
+    return view('frontend.vertu');
+});
+
+Route::get('/dongho', function () {
+    return view('frontend.dongho');
+});
+
+Route::get('/phukien', function () {
+    return view('frontend.phukien');
+});
+
+Route::get('/khampha', function () {
+    return view('frontend.khampha');
+});
+
+Route::get('/dichvu', function () {
+    return view('frontend.dichvu');
+});
+
+Route::get('/lienhe', function () {
+    return view('frontend.lienhe');
+});
+
