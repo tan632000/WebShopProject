@@ -26,16 +26,16 @@
                 <h1><a href="">Vertu</a></h1>
             </div>
             <div class="box-21">
+                @foreach($smartProducts as $smartProduct)
                 <div class="box-product">
-                    @foreach($smartProducts as $smartProduct)
                     <div class="box-img">
                         <a href=""><img src="{{asset('uploads/product_images/')}}/{{$smartProduct->image}}" alt=""></a>
                     </div>
                     <h3><a href="">{{$smartProduct->long_description}}</a></h3>
                     <div class="lable-0">{{$smartProduct->short_description}}</div>
                     <div class="price">{{$smartProduct->price}} dong</div>
-                    @endforeach
                 </div>
+                @endforeach
             </div>
         </div>
         <br>
