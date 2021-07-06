@@ -87,6 +87,11 @@
     color: white;
     text-decoration: none;
 }
+.box-2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
 
 .box-21{
     display: grid;
@@ -101,7 +106,8 @@
 }
 /* anh */
 .box-img img{
-    width: 100%;
+    width: 50%;
+    height: auto;
 }
 .box-img img:hover{
     transition: all 0.5s ease-in-out;

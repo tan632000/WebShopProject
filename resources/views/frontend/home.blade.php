@@ -23,56 +23,18 @@
         <br>
         <div class="box-2">
             <div class="title1">
-                <h1><a href="">ROLEX</a></h1>
+                <h1><a href="">Vertu</a></h1>
             </div>
             <div class="box-21">
                 <div class="box-product">
+                    @foreach($smartProducts as $smartProduct)
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex1.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{asset('uploads/product_images/')}}/{{$smartProduct->image}}" alt=""></a>
                     </div>
-                    <h3><a href="">Đồng hồ Rolex Day Date President Automatic Day Date Mens watch 118235 CHODRO</a></h3>
-                    <div class="lable-0">RL 01</div>
-                    <div class="price">750 Triệu</div>
-                </div>
-                <div class="box-product">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex2.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Đồng hồ Rolex Day Date President Automatic Day Date 118235 CHODRP</a></h3>
-                    <div class="lable-0">RL 03</div>
-                    <div class="price">750 Triệu</div>
-                </div>
-                <div class="box-product">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex1.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Đồng hồ Rolex Day Date President Automatic Day Date Mens watch 118235 CHODRO</a></h3>
-                    <div class="lable-0">RL 01</div>
-                    <div class="price">750 Triệu</div>
-                </div>
-                <div class="box-product">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex5.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Đồng hồ Rolex Datejust 126231 Mặt Đen Nạm Kim Cương Dây Đeo Oyster</a></h3>
-                    <div class="lable-0">RL 56</div>
-                    <div class="price">303 Triệu</div>
-                </div>
-                <div class="box-product">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex6.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Đồng hồ Rolex Datejust Automatic Date 126231 Mặt Số Đen Nạm Kim Cương</a></h3>
-                    <div class="lable-0">RL 57</div>
-                    <div class="price">303 Triệu</div>
-                </div>
-                <div class="box-product">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/rolex5.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Đồng hồ Rolex Datejust 126231 Mặt Đen Nạm Kim Cương Dây Đeo Oyster</a></h3>
-                    <div class="lable-0">RL 56</div>
-                    <div class="price">303 Triệu</div>
+                    <h3><a href="">{{$smartProduct->long_description}}</a></h3>
+                    <div class="lable-0">{{$smartProduct->short_description}}</div>
+                    <div class="price">{{$smartProduct->price}} dong</div>
+                    @endforeach
                 </div>
             </div>
         </div>

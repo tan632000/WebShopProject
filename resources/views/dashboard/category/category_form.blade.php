@@ -41,22 +41,22 @@
       </div>
     </div>
     <div class="form-group row">
-            <div class="col-sm-2">Publication Status</div>
-            <div class="col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" name="status" value="1" type="radio" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                 Published
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name="status" value="0" type="radio" id="unpublished">
-                <label class="form-check-label" for="unpublished">
-                  Unpublished
-                </label>
-              </div>
-            </div>
-          </div>
+      <div class="col-sm-2">Publication Status</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" name="status" value="1" type="radio" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Published
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="status" value="0" type="radio" id="unpublished">
+          <label class="form-check-label" for="unpublished">
+            Unpublished
+          </label>
+        </div>
+      </div>
+    </div>
 
 
     <div class="form-group row">

@@ -139,7 +139,7 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{  Auth::user()->name }}</span>
-                <img class="img-profile rounded-circle" src="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.0-9/83027107_1157670797905852_893386391116311066_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=dsQ0azdO5jgAX9o5iff&_nc_ht=scontent-hkg4-1.xx&oh=c8b3a00be396d3091b179ed98770fd74&oe=5F083C00">
+                <img class="img-profile rounded-circle" src="{{ asset('/images/avt.jpeg') }}">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">

@@ -12,7 +12,7 @@ class CategoryController extends Controller
         return view('dashboard/category/category_form');
     }
     public function add_category(Request $request){
-        $validate = $request->validate([
+        $request->validate([
             'name' => 'required|unique:categories,name',
             'description' => 'required',
             'status' => 'required'
@@ -24,7 +24,7 @@ class CategoryController extends Controller
         $category->status = $request->status;
 
         $category->save();
-        return redirect('/add/category')->with('message_add_cat','Category Added Successfully');
+        return redirect('/category/add')->with('message_add_cat','Category Added Successfully');
     }
     public function manage_category(){
         $categories =  Category::paginate(10);
@@ -52,7 +52,7 @@ class CategoryController extends Controller
         return view('dashboard/category/category_edit_form',['category'=> $category]);
     }
     public function category_update(Request $request){
-        $validate = $request->validate([
+        $request->validate([
             'name' => 'required|unique:categories,name',
             'description' => 'required',
             'status' => 'required'
@@ -62,6 +62,6 @@ class CategoryController extends Controller
         $category->description = $request->description;
         $category->status = $request->status;
         $category->save();
-        return redirect('category/manage')->with('Category_update_message','Category Updated Successfully');
+        return back()->with('Category_update_message','Category Updated Successfully');
     }
 }
