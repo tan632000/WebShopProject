@@ -47,67 +47,153 @@
                 <div class="header-2">
                     <div class="header-21">
                         <ul id="MenuItems">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">VERTU</a>
-                                <ul class="dropdown">
-                                    <ul>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                    </ul>
-                                </ul>
+                            <li><a href=""><strong>HOME</strong> </a></li>
+                            <li><a href=""><strong>VERTU</strong></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-title">
+                                       <strong>ĐIỆN THOẠI</strong>
+                                       <hr />
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-band">
+                                            <strong>THƯƠNG HIỆU</strong>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="">IPHONE</a></li>
+                                                    <li><a href="">SAMSUNG</a></li>
+                                                    <li><a href="">XIAOMI</a></li>
+                                                    <li><a href="">OPPO</a></li>
+                                                    <li><a href="">REALME</a></li>
+                                    
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">HUAWEI</a></li>
+                                                    <li><a href="">VIVO</a></li>
+                                                    <li><a href="">VSMART</a></li>
+                                                    <li><a href="">NOKIA</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-price">
+                                            <strong>KHOẢNG GIÁ</strong>
+                                            <ul>
+                                                <li><a href="">Dưới 1 triệu</a></li>
+                                                <li><a href="">Từ 1 đến 5 triệu</a></li>
+                                                <li><a href="">Từ 5 đến 10 triệu</a></li>
+                                                <li><a href="">Trên 10 triệu</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="">WATCH</a>
-                                <ul class="dropdown">
-                                    <ul>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                    </ul>
-                                </ul>
+                            <li><a href=""><strong>ĐỒNG HỒ</strong></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-title">
+                                       <strong>ĐỒNG HỒ</strong>
+                                       <hr />
+                                   </div>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-band">
+                                            <strong>THƯƠNG HIỆU</strong>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="">PATEK PHILIPE</a></li>
+                                                    <li><a href="">AUDEMARS PIGUET</a></li>
+                                                    <li><a href="">VACHERON CONSTANTIN</a></li>
+                                                    <li><a href="">TAG HEUER</a></li>
+                                                    <li><a href="">JAEGER-LECOULTRE</a></li>
+                                    
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">ROLEX</a></li>
+                                                    <li><a href="">HUBLOT</a></li>
+                                                    <li><a href="">BREGUEST & FILS</a></li>
+                                                    <li><a href="">CHOPARD</a></li>
+                                                    <li><a href="">CITIZEN</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-price">
+                                            <strong>KHOẢNG GIÁ</strong>
+                                            <ul>
+                                                <li><a href="">Dưới 1 triệu</a></li>
+                                                <li><a href="">Từ 1 đến 5 triệu</a></li>
+                                                <li><a href="">Từ 5 đến 10 triệu</a></li>
+                                                <li><a href="">Trên 10 triệu</a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li><a href=""><strong>PHỤ KIỆN</strong></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-title">
+                                       <strong>PHỤ KIỆN</strong>
+                                       <hr />
+                                   </div>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-band">
+                                            <strong>THƯƠNG HIỆU</strong>
+                                            <div>
+                                                <ul>
+                                                    <li><a href="">Pin sạc dự phòng</a></li>
+                                                    <li><a href="">Loa, tai nghe</a></li>
+                                                    <li><a href="">Củ sạc, cáp sạc</a></li>
+                                                    <li><a href="">Giá đỡ điện thoại</a></li>
+                                    
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">Thẻ nhớ, usb</a></li>
+                                                    <li><a href="">Bao da, ốp lưng</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-price">
+                                            <strong>KHOẢNG GIÁ</strong>
+                                            <ul>
+                                                <li><a href="">Hộp lên cót đồng hồ</a></li>
+                                                <li><a href="">Dây đeo đồng hồ</a></li>
+                                                <li><a href="">Hộp đựng đồng hồ</a></li>
+                                                <li><a href="">Các phụ kiện khác</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="">PHỤ KIỆN</a>
-                                <ul class="dropdown">
-                                   <ul>
-                                    <li><a href="">Vertu1</a></li>
-                                    <li><a href="">Vertu2</a></li>
-                                    <li><a href="">Vertu3</a></li>
-                                   </ul>
-                                </ul>
+                            <li><a href=""><strong>KHÁM PHÁ</strong></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-title">
+                                       <strong>KHÁM PHÁ</strong>
+                                       <hr />
+                                   </div>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li><a href="">Kiến thức</a></li>
+                                            <li><a href="">Tin tức</a></li>
+                                            <li><a href="">Hướng dẫn </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="">KHÁM PHÁ</a>
-                                <ul class="dropdown">
-                                    <ul>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                    </ul>
-                                </ul>
+                            <li><a href=""><strong>DỊCH VỤ</strong></a>
+                                <div class="dropdown">
+                                    <div class="dropdown-title">
+                                       <strong>KHÁM PHÁ</strong>
+                                       <hr />
+                                   </div>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li><a href="">Bảo hành sửa chữa</a></li>
+                                            <li><a href="">Thông tin</a></li>
+                                            <li><a href="">Mua lại điện thoại cũ </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="">DỊCH VỤ</a>
-                                <ul class="dropdown">
-                                    <ul>
-                                        <li><a href="">Vertu1</a></li>
-                                        <li><a href="">Vertu2</a></li>
-                                        <li><a href="">Vertu3</a></li>
-                                    </ul>
-                                </ul>
-                            </li>
-                            <li><a href="">LIÊN HỆ</a></li>
+                            <li><a href=""><strong>LIÊN HỆ</strong></a></li>
                         </ul>
                     </div>
                     <div class="header-22">
