@@ -50,3 +50,6 @@ Route::get('/lienhe', function () {
     return view('frontend.lienhe');
 });
 
+Route::get('/xoan', function () {
+    return view('frontend.xoan');
+});
