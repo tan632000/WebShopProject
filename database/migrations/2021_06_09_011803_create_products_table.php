@@ -21,8 +21,8 @@ class CreateProductsTable extends Migration
             $table->text('long_description');
             $table->integer('price');
             $table->tinyinteger('status');
-            $table->string('image');
-            $table->integer('quantity');
+            $table->string('image')->default('default_img.jpg');
+            $table->integer('quantity')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });
