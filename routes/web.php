@@ -48,6 +48,9 @@ Route::get('/lienhe', function () {
     return view('frontend.lienhe');
 });
 
+Route::get('/xoan', function () {
+    return view('frontend.xoan');
+});
 Route::get('/product/details/{id}',[App\Http\Controllers\FrontendController::class, 'product_details_by_id'])->name('product_details');
 
 //-----------------------------ADMIN ROUTE------------------------------------

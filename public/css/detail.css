@@ -1,0 +1,123 @@
+.titlemain {
+    font-size: 18px;
+    font-family: Tahoma;
+    background: #FF6E01;
+    padding: 15px 30px;
+    text-transform: none;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+.gach1 {
+    border-bottom: 1px solid #FF6E01;
+    margin-bottom: 20px;
+    margin-left: 1px;
+}
+
+.content {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: justify;
+    color: #000;
+}
+
+.content ul,
+li {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.thongso li span span {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+/* 
+#price_detail1 {
+    font-size: 28px;
+    margin: 20px 0px;
+    color: rgb(204, 0, 0);
+    font-weight: bold;
+    color: #F62022;
+    padding-top: 8px;
+} */
+
+#muahang1 a {
+    background: #F62022;
+    color: #FFF;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 120px;
+}
+
+a {
+    text-decoration: none;
+    border: none #FFF;
+}
+
+#orgatab .nav {
+    overflow: hidden;
+    margin-left: 0px;
+}
+
+#orgatab .nav li a .current,
+#orgatab .nav li a .current :hover {
+    background: #FF6E01;
+    color: #FFF;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+#orgatab .nav li {
+    width: auto;
+    float: left;
+    margin: 0 1px 0 0;
+    min-width: 129px;
+    white-space: nowrap;
+}
+
+#orgatab .nav li a {
+    display: block;
+    padding: 15px 40px;
+    color: #000;
+    background: #EFEFEF;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* tạo kính lúp */
+
+.large {
+    width: 175px;
+    height: 17px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, .85) 0 0 7px 7px rgba(0, 0, 0, .2) inset 0 0 40px 2px rgba(0, 0, 0, .25);
+    /*load phiên bản ảnh kích thước thật  */
+    background: url(images/detail.jpg) no-repeat;
+    display: none;
+}
+
+
+/* 
+#overlay {
+    border: 1px solid black;
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    background-image: url('http://ginger-mum.com/wp-content/uploads/2015/10/3633-1269758855-0da5042c33400a811a5d766be4579cb8.jpg');
+    background-repeat: no-repeat;
+} */

@@ -21,9 +21,11 @@
     <link href="{{ asset('css/trangchu.css') }}" rel="stylesheet">
     <link href="{{ asset('css/numen.css') }}" rel="stylesheet">
     <link href="{{ asset('css/numen2.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/detail.css') }}" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90d684ab4f.js"></script>
+
 </head>
-<body>
+<body>  
     <div id="app">
         <div class="header-bar">
             <div class="container-0">
@@ -337,6 +339,7 @@
         </div>
     </div>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/image_detail.js') }}"></script>
     <script src="{{ asset('js/index.js') }}" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
