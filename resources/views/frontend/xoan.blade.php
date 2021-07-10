@@ -32,7 +32,7 @@
                      </div> 
                         
                     <!-- </div> -->
-                    <div class="xzoom-container" style="width:50%; height:28%;"  >
+                    <div class="xzoom-container" style="width:40%; height:28%;"  >
                         <img class="xzoom" id="xzoom-default" src="{{ asset('images/detail.jpg') }}" xoriginal="{{ asset('images/detail.jpg') }}" style="width:100%; height:100%;" />
             
                      </div> 
