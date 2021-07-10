@@ -8,9 +8,12 @@
     font-size: 12px;
     margin: 10px;
 }
+.box-new1 .box-img{
+    height: 50%;
+}
 .box-new1 img{
     max-height: 200px;
-    /* width: 100%; */
+    height: 100%;
 }
 .box-new h3{
     font-size: 18px;

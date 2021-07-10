@@ -21,9 +21,17 @@
     <link href="{{ asset('css/trangchu.css') }}" rel="stylesheet">
     <link href="{{ asset('css/numen.css') }}" rel="stylesheet">
     <link href="{{ asset('css/numen2.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/khampha.css') }}" rel="stylesheet">
     <link href="{{ asset('css/detail.css') }}" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/90d684ab4f.js"></script>
-
+    
+    <script src="{{ asset('js/jquery.js') }}" ></script>
+   
+    <script type="text/javascript" src="{{ asset('js/xzoom.min.js') }}" ></script>
+    <link href="{{ asset('css/xzoom.css') }}"  type="text/css" rel="stylesheet" media="all">
+   
+    <!-- <script src="https://unpkg.com/js-image-zoom@0.4.1/js-image-zoom.js" type="application/javascript"></script> -->
 </head>
 <body>  
     <div id="app">
@@ -175,7 +183,7 @@
                                         <ul>
                                             <li><a href="">Kiến thức</a></li>
                                             <li><a href="">Tin tức</a></li>
-                                            <li><a href="">Hướng dẫn </a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -338,9 +346,13 @@
                 </div>
         </div>
     </div>
+   
+      
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/image_detail.js') }}"></script>
+    <!-- <script src="{{ asset('js/image_detail.js') }}" ></script> -->
     <script src="{{ asset('js/index.js') }}" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="{{ asset('js/foundation.min.js') }}" ></script>
+    <script src="{{ asset('js/setup.js') }}" ></script>
 </body>
 </html>
