@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="breadcrumb">
+<div class="wrap-title">
    <div class="container">
         <a href="">Trang chủ</a>
             &nbsp; / &nbsp;
@@ -16,25 +16,29 @@
 <div id="wrapper">
     <div class="container">
         <div class="boxmain" style="margin-bottom: 50px">
-            <div class="gach1">
-                <h1 class="titlemain"> Đồng hồ Rolex Day Date 40mm 228235 Olive Green Dial Everose Gold </h1> 
+            <div class="title1">
+                <h1> <a href="">Đồng hồ Rolex Day Date 40mm 228235 Olive Green Dial Everose Gold</a>  </h1> 
             </div>
             <div class="row">
                <div class="col-sm-5 col-xs-12">
-                    <div class="img-pro magnify">
+                    <!-- <div class="img-pro magnify" style="height:60%"> -->
                        <!-- thẻ div chứa ảnh to -->
-                        <div class="large">
+                        <!-- <div class="large">
 
-                        </div>
+                        </div> -->
                       <!-- phiên bản ảnh nhỏ -->
+                     <div style="height:65% ; width:100%;"> 
+                        <img src="{{ asset('images/detail.jpg') }}" alt="detail" class="small" style="height:100% ; width:100%; padding-bottom:10px;" />
+                     </div> 
                         
-                        <img src="{{ asset('images/detail.jpg') }}" alt="detail" class="small" style="height:460px ; width:460px;" />
-                       
-                        
-                    </div>
-                    <div class="relative-img">
-                        <img src="{{ asset('images/detail.jpg') }}" alt="detail" style=" width:112px;" />
-                    </div>
+                    <!-- </div> -->
+                    <div class="xzoom-container" style="width:60%; height:30%;"  >
+                        <img class="xzoom" id="xzoom-default" src="{{ asset('images/detail.jpg') }}" xoriginal="{{ asset('images/detail.jpg') }}" style="width:100%; height:100%;" />
+            
+                     </div> 
+                    <!-- <div class="relative-img">
+                        <img src="{{ asset('images/detail.jpg') }}" alt="detail" style=" width:40%;" />
+                    </div> -->
                </div>
                <div class="col-sm-7 col-xs-12">
                     <div class="product_code" style="font-weight: bold;
@@ -186,24 +190,24 @@
                                        margin-bottom: 20px;
                                        margin-left: 1px;" >
                   <li>
-                     <a href="#" class="current"style="text-decoration: none;" > Thông tin chung</a>
+                     <a  class="hienList-wrap"style="text-decoration: none;" > Thông tin chung</a>
                   </li>
                   <li>
-                     <a href="#"style="text-decoration: none;"> Thông số kỹ thuật</a>
+                     <a  style="text-decoration: none;" class="anList-wrap"> Thông số kỹ thuật</a>
                   </li>
                   <li>
-                     <a href="#"style="text-decoration: none;">Nhận xét</a>
+                     <a  style="text-decoration: none;">Nhận xét</a>
                   </li>
                </ul>
                <div class="list-wrap">
                      <p style="text-align: center">
-                         <img src="{{ asset('images/detail.jpg') }}" alt="detail" style=" width:800px;" />
+                         <img src="{{ asset('images/detail.jpg') }}" alt="detail" style=" width:80%;" />
                      </p>
                </div>
 
-               <div class="boxmain">
-                  <div class="gach1">
-                     <h2 class="titlemain">Sản phẩm cùng loại</h2>
+               <div class="box-2">
+                  <div class="title1">
+                     <h1> <a href="">Sản phẩm cùng loại</a> </h1>
                   </div>
                   <div class="box-21"> 
 

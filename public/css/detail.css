@@ -66,9 +66,9 @@ a {
     margin-left: 0px;
 }
 
-#orgatab .nav li a .current,
-#orgatab .nav li a .current :hover {
-    background: #FF6E01;
+#orgatab .nav li a:focus,
+#orgatab .nav li a:hover {
+    background-color: #FF6E01;
     color: #FFF;
 }
 
@@ -97,19 +97,24 @@ a {
 }
 
 
+/* hover */
+
+#muahang1 a:hover{
+    background-color:#FF6E01 ;
+}
 /* tạo kính lúp */
 
-.large {
+/* .large {
     width: 175px;
     height: 17px;
     position: absolute;
     border-radius: 50%;
     border: 1px solid black;
     box-shadow: 0 0 0 7px rgba(255, 255, 255, .85) 0 0 7px 7px rgba(0, 0, 0, .2) inset 0 0 40px 2px rgba(0, 0, 0, .25);
-    /*load phiên bản ảnh kích thước thật  */
-    background: url(images/detail.jpg) no-repeat;
+    load phiên bản ảnh kích thước thật 
+    background-image: url(../images/detail.jpg) no-repeat;
     display: none;
-}
+} */
 
 
 /* 

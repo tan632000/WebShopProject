@@ -48,6 +48,31 @@ Route::get('/lienhe', function () {
     return view('frontend.lienhe');
 });
 
+Route::get('/khampha/kienthuc', function () {
+    return view('frontend.kienthuc');
+});
+
+Route::get('/khampha/kienthuc1', function () {
+    return view('frontend.kienthuc1');
+});
+
+Route::get('/khampha/kienthuc2', function () {
+    return view('frontend.kienthuc2');
+});
+
+Route::get('/khampha/kienthuc3', function () {
+    return view('frontend.kienthuc3');
+});
+
+Route::get('/khampha/kienthuc4', function () {
+    return view('frontend.kienthuc4');
+});
+
+Route::get('/giohang', function () {
+    return view('frontend.giohang');
+});
+
+
 Route::get('/xoan', function () {
     return view('frontend.xoan');
 });
