@@ -23,7 +23,7 @@
             <br>
             <div class="box-2">
                 <div class="title1">
-                    <h1><a></a>{{ $category[0]->name }}</h1>
+                    <h1><a>{{ $category[0]->name }}</a></h1>
                 </div>
                 <div class="box-21">
                     @foreach ($smartProducts as $smartProduct)

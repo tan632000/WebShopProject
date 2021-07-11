@@ -21,7 +21,7 @@
                         <div class="box-img">
                             <a href="{{ route('product_details', ['id' => $product->id]) }}"><img src="{{ asset('uploads/product_images/') }}/{{ $product->image }}" alt=""></a>
                         </div>
-                        <h3><a>{{$product->name}}</a></h3>
+                        <h3><a href="{{ route('product_details', ['id' => $product->id]) }}">{{$product->name}}</a></h3>
                         <div class="lable-0">{{$product->short_description}}</div>
                         <div class="price">{{$product->price}} dong</div>
                     </div>

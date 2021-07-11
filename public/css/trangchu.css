@@ -79,6 +79,7 @@
 .title1 h1{
     font-family: Tahoma;
     background: #FF6E01;
+    color: white;
     font-size: 18px;
     padding: 15px 30px;
     display: inline-block;
@@ -92,6 +93,7 @@
 .box-21{
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    margin-bottom: 50px;
 }
 .box-product{
     padding: 4px;
@@ -121,6 +123,7 @@
     height: 42px;
     padding: 0 4px;
     margin-top: 20px;
+    overflow: hidden;
 }
 .box-product h3 a{
     color: black;
@@ -133,6 +136,7 @@
     font-weight: bold;
     line-height: 30px;
     height: 30px;
+    overflow: hidden;
 }
 /* gia */
 .price{
