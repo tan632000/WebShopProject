@@ -18,23 +18,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+//-----------------------------FRONTEND ROUTE------------------------------------
+
 Auth::routes();
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/', [App\Http\Controllers\FrontendController::class, 'index']);
 
-Route::get('/vertu', function () {
-    return view('frontend.vertu');
-});
-
-Route::get('/dongho', function () {
-    return view('frontend.dongho');
-});
-
-Route::get('/phukien', function () {
-    return view('frontend.phukien');
-});
+Route::get('/danhmuc/{id}', [App\Http\Controllers\FrontendController::class, 'getProductOfCategory'])->name('get_list_product_of_category');
 
 Route::get('/khampha', function () {
     return view('frontend.khampha');
@@ -76,12 +67,12 @@ Route::get('/thanhtoan', function () {
     return view('frontend.thanhtoan');
 });
 
-Route::get('/xoan', function () {
-    return view('frontend.xoan');
-});
 Route::get('/product/details/{id}',[App\Http\Controllers\FrontendController::class, 'product_details_by_id'])->name('product_details');
 
 //-----------------------------ADMIN ROUTE------------------------------------
+
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 //  CATEGORY ROUTE
 Route::prefix('category')->group(function () {
     Route::get('/add', [App\Http\Controllers\CategoryController::class, 'show_category_form'])->name('add_category_form');
@@ -117,6 +108,7 @@ Route::prefix('cart')->group(function () {
 
 // CHECKOUT ROUTE
 Route::prefix('checkout')->group(function () {
+    Route::get('/cart', [App\Http\Controllers\CheckoutController::class, 'list_cart'])->name('list_cart');
     Route::get('/form', [App\Http\Controllers\CheckoutController::class, 'checkout_form_view'])->name('checkout_form');
     Route::get('/shipping', [App\Http\Controllers\CheckoutController::class, 'checkout_shipping_form'])->name('shipping_form');
     Route::post('/shipping', [App\Http\Controllers\CheckoutController::class, 'save_shipping_info'])->name('save_shipping');

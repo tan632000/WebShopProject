@@ -57,8 +57,8 @@
                 <div class="header-2">
                     <div class="header-21">
                         <ul id="MenuItems">
-                            <li><a href=""><strong>HOME</strong> </a></li>
-                            <li><a href=""><strong>VERTU</strong></a>
+                            <li><a href="{{url('/')}}"><strong>HOME</strong> </a></li>
+                            <li><a href="{{ route('get_list_product_of_category', ['id' => 1]) }}"><strong>Thiết bị điện tử thông minh</strong></a>
                                 <div class="dropdown">
                                     <div class="dropdown-title">
                                        <strong>ĐIỆN THOẠI</strong>
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href=""><strong>ĐỒNG HỒ</strong></a>
+                            <li><a href="{{ route('get_list_product_of_category', ['id' => 2]) }}"><strong>Thiết bị điện tử trong sinh hoạt</strong></a>
                                 <div class="dropdown">
                                     <div class="dropdown-title">
                                        <strong>ĐỒNG HỒ</strong>
@@ -137,7 +137,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            <li><a href=""><strong>PHỤ KIỆN</strong></a>
+                            <li><a href="{{ route('get_list_product_of_category', ['id' => 3]) }}"><strong>Thiết bị chiếu sáng</strong></a>
                                 <div class="dropdown">
                                     <div class="dropdown-title">
                                        <strong>PHỤ KIỆN</strong>
@@ -173,7 +173,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href=""><strong>KHÁM PHÁ</strong></a>
+                            <li><a href="{{url('/khampha')}}"><strong>KHÁM PHÁ</strong></a>
                                 <div class="dropdown">
                                     <div class="dropdown-title">
                                        <strong>KHÁM PHÁ</strong>
@@ -188,7 +188,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href=""><strong>DỊCH VỤ</strong></a>
+                            <li><a href="{{url('/dichvu')}}"><strong>DỊCH VỤ</strong></a>
                                 <div class="dropdown">
                                     <div class="dropdown-title">
                                        <strong>KHÁM PHÁ</strong>
@@ -203,7 +203,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href=""><strong>LIÊN HỆ</strong></a></li>
+                            <li><a href="{{url('/lienhe')}}"><strong>LIÊN HỆ</strong></a></li>
                         </ul>
                     </div>
                     <div class="header-22">
@@ -354,5 +354,9 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="{{ asset('js/foundation.min.js') }}" ></script>
     <script src="{{ asset('js/setup.js') }}" ></script>
+    <script>
+        const hidden = document.querySelector('.hidden');
+        hidden.style.display = 'none';
+    </script>
 </body>
 </html>
