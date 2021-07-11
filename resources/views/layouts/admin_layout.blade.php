@@ -33,7 +33,10 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{asset('admin/js/sb-admin-2.min.js')}}"></script>
-
+  <script>
+    const hidden = document.querySelector('.hidden');
+    hidden.style.display = 'none';
+</script>
 </body>
 
 </html>
