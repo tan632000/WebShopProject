@@ -4,9 +4,9 @@
 
 <div class="wrap-title">
     <div class="container">
-        <a href="">Trang chủ</a>
+        <a href="{{url('/')}}">Trang chủ</a>
             &nbsp; / &nbsp;
-        <a href="">Khám phá</a>
+        <a href="{{url('/khampha')}}">Khám phá</a>
     </div>
 </div>
 <div class="wrap">
@@ -17,65 +17,54 @@
             </div>
             <div class="box-new">
                 <div class="box-new1">
-                    <h3><a href="">Hướng Dẫn sử dụng điện thoại Vertu Signature</a></h3>
+                    <div class="box-img">
+                        <a href=""><img src="{{ asset('images/vu-hp.jpg') }}" alt=""></a>
+                    </div>
+                    <h3><a href="">Vũ - "Hoàng tử Indie" của Việt Nam bước ra biển lớn</a></h3>
                 </div>
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/rolex_lichsu.jpg') }}" alt=""></a>
                     </div>
                     <h3><a href="">Lịch sử thương hiệu đồng hồ Rolex chính hãng Thụy Sỹ</a></h3>
                 </div> 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/copa-America.jpg') }}" alt=""></a>
+                    </div>
+                    <h3><a href="">Messi, Neymar hay nhất Copa America 2021</a></h3>
+                </div> 
+                <div class="box-new1">
+                    <div class="box-img">
+                        <a href=""><img src="{{ asset('images/quart.jpg') }}" alt=""></a>
                     </div>
                     <h3><a href="">Đồng hồ Quartz là gì? Đồng hồ Automatic là gì? Sự khác nhau giữa đồng hồ Quartz & Automatic</a></h3>
                 </div> 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/hddt.png') }}" alt=""></a>
                     </div>
-                    <h3><a href="">Vertu ra mắt smartphone New Signature Touch giá từ hơn 200 triệu đồng của Vertu</a></h3>
+                    <h3><a href="">Đâu là chiếc điện thoại được mong đợi nhất sẽ ra mắt nửa cuối...</a></h3>
                 </div> 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/kienthucip.jpg') }}" alt=""></a>
                     </div>
-                    <h3><a href="">Bộ sưu tập Vertu giá hơn 4 tỷ đồng dành riêng cho Nhật Bản</a></h3>
+                    <h3><a href="">Rò rỉ hình ảnh ốp lưng của iPhone 13 Pro cho thấy cụm camera...</a></h3>
                 </div> 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/actvn.png') }}" alt=""></a>
                     </div>
-                    <h3><a href="">Vertu hợp tác Bentley ra điện thoại Signature giá gần 500 triệu đồng</a></h3>
-                    <p> Vertu Signature phiên bản đặc biệt dành cho các chủ nhân của dòng xe sang Bentley có khung tintan, vỏ bằng sợi carbon, phím bấm phủ tinh thể sapphire và hồng ...</p>
+                    <h3><a href="">Giới thiệu - Học Viện Kỹ Thuật Mật Mã</a></h3>
                 </div> 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/euro2020.jpg') }}" alt=""></a>
                     </div>
-                    <h3><a href="">Vertu ra mắt hai mẫu Signature Touch da thằn lằn mới</a></h3>
+                    <h3><a href="">Chung Kết EURO 2020</a></h3>
                 </div> 
-                <div class="box-new1">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">Mẹo và lưu ý khi dùng điện thoại Vertu</a></h3>
-                    <p> cách bảo quản và chăm sóc vertu của bạn như thế nào cho tốt</p>
-                </div> 
-                <div class="box-new1">
-                    <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
-                    </div>
-                    <h3><a href="">THE NEW ASTER STINGRAY & QUILT 2015 </a></h3>
-                    <p>  Bộ sưu tập Smart phone cảm ứng mới thuộc dòng Aster của hãng VERTU vừa được cho ra mắt.Bộ sưu tập gồm 5 mẫu được bọc da cá đuối và da bê có các màu xanh ...</p>
-                </div> 
-                <div class="box-new1">
-                    <h3><a href="">Cam kết chất lượng </a></h3>
-                </div> 
-                <div class="box-new1">
-                    <h3><a href="">Giới thiệu </a></h3>
-                </div> 
+               
             </div>
         </div>
     </div>

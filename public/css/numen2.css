@@ -17,6 +17,15 @@
     justify-content: center
 }
 
+.box-new1 .box-img {
+    height: 50%;
+}
+
+.box-new1 img {
+    max-height: 200px;
+    height: 100%;
+}
+
 .box-new h3 {
     font-size: 18px;
     color: #000;
