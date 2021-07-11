@@ -14,3 +14,124 @@
 .kienthuc1 p , .kienthuc2 p{
     font-size: 16px;
 }
+
+/* trang gio hang */
+
+.carts_giohang{
+    overflow-x: scroll;
+}
+
+
+.carts_giohang table tbody tr.tr-title,
+.carts_giohang table tbody tr.tr-content {
+    border-bottom: 1px solid #CCCCCC;
+    display: table-row;
+}
+
+
+.tr-title td {
+    text-align: center;
+}
+.tr-content td{
+    text-align: center;
+    padding: 10px;
+}
+
+tr .fa-times{
+    cursor: pointer;
+}
+/* tr-muahang */
+
+.tr-muahang td a.btnCart{
+    padding: 16px 28px;
+    text-decoration: none;
+}
+.btnCart{
+    background: #2A2A2C;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    padding: 14px 28px;
+    text-transform: uppercase;
+}
+.btnCart:hover{
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+/* trang thanh toán */
+
+label{
+    display: block;
+}
+
+.thanh-toan{
+    display: flex;
+}
+/* thanh toan left */
+.thanh-toan-left, .thanh-toan-right{
+    width: 50%;
+    padding: 10px 10px;
+}
+.thanh-toan-left > div{
+    padding-bottom: 5px;
+}
+.thanh-toan-left h3,
+.thanh-toan-left .tt-note,
+.thanh-toan-right h3
+{
+    color: #FF6E01;
+    font-weight: bold;
+}
+.thanh-toan-left input,
+.thanh-toan-left textarea
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    font-size: 14px;
+    padding: 6px 12px;
+    font-family: inherit;
+}
+.thanh-toan-left input:focus{
+    outline-color: rgb(150, 202, 250);
+}
+/* thanh toan right */
+.thanh-toan-right p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+.thanh-toan-right p a.tt-csht{
+    margin: 20px 0px;
+    color: red;
+    font-size: 16px;
+}
+.thanh-toan-right p a.tt-back{
+    color:rgb(201, 82, 73);
+}
+.thanh-toan-right p a.tt-back:hover{
+    color: #000;
+}
+.thanh-toan-right input{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0.5;
+}
+.thanh-toan-right input:hover{
+    opacity: 1;
+}
+
+/*  */
+
+@media only screen and (max-width:768px) {
+    .thanh-toan{
+        display: block;
+    }
+    .thanh-toan-left, .thanh-toan-right{
+        width: 100%;
+        padding: 10px 10px;
+    }
+}

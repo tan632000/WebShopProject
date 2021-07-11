@@ -72,6 +72,9 @@ Route::get('/giohang', function () {
     return view('frontend.giohang');
 });
 
+Route::get('/thanhtoan', function () {
+    return view('frontend.thanhtoan');
+});
 
 Route::get('/xoan', function () {
     return view('frontend.xoan');
