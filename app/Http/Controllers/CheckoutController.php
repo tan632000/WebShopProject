@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Session;
 
 class CheckoutController extends Controller
 {
+    public function list_cart(Request $request) {
+        return view('frontend.checkout.giohang');
+    }
 
     public function checkout_form_view(){
         return view('frontend.checkout.checkout_form');
