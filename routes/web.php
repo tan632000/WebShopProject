@@ -51,6 +51,23 @@ Route::get('/lienhe', function () {
 Route::get('/xoan', function () {
     return view('frontend.xoan');
 });
+
+Route::get('/dichvusuachua', function () {
+    return view('frontend.dichvusuachua');
+});
+
+Route::get('/baohanhsanpham', function () {
+    return view('frontend.baohanhsanpham');
+});
+
+Route::get('/mualaidienthoai', function () {
+    return view('frontend.mualaidienthoai');
+});
+
+Route::get('/thanhtoan', function () {
+    return view('frontend.thanhtoan');
+});
+
 Route::get('/product/details/{id}',[App\Http\Controllers\FrontendController::class, 'product_details_by_id'])->name('product_details');
 
 //-----------------------------ADMIN ROUTE------------------------------------

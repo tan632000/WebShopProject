@@ -11,13 +11,15 @@
 </div>
 <div class="wrap">
     <div class="container">
-        <div class="box-2">
-            <div class="title1">
-                <h1><a href="">Dịch vụ</a></h1>
+        <div class="boxmain">
+            <div class="gach1" style=" border-bottom: 1px solid #FF6E01;
+                                        margin-bottom: 20px;
+                                        margin-left: 1px;">
+                <h1 class="titlemain"><a href="">Dịch vụ</a></h1>
             </div>
             <div class="box-new">
                 <div class="box-new1">
-                    <h3><a href="">Dịch Vụ sửa chữa</a></h3>
+                    <h3><a href="">Dịch vụ sửa chữa</a></h3>
                 </div>
                 
                 <div class="box-new1">
@@ -26,7 +28,7 @@
 
                 <div class="box-new1">
                     <div class="box-img">
-                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
+                        <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt="" style=" width: 200px; height :200px ;" ></a>
                     </div>
                     <h3><a href="">Mua lại điện thoại Vertu cũ đã qua sử dụng</a></h3>
                 </div> 
