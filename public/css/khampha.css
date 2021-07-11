@@ -1,4 +1,5 @@
-.kienthuc1 > div{
+.kienthuc1 > div
+{
     text-align: center;
     margin-bottom: 10px;
 }
@@ -7,14 +8,22 @@
     width: 100%;
 }
 
-.kienthuc1 h6{
+.kienthuc1 h6
+{
     margin-left: 2%;
 }
 
-.kienthuc1 p , .kienthuc2 p{
+.kienthuc1 p , .kienthuc2 p
+{
     font-size: 16px;
 }
-
+.kienthuc1 img
+{
+    width: 80%;
+}
+.kienthuc1 audio{
+    width: 100%;
+}
 /* trang gio hang */
 
 .carts_giohang{
