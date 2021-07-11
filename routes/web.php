@@ -59,6 +59,26 @@ Route::get('/khampha/kienthuc4', function () {
     return view('frontend.kienthuc4');
 });
 
+Route::get('/khampha/tintuc', function () {
+    return view('frontend.tintuc');
+});
+
+Route::get('/khampha/tintuc1', function () {
+    return view('frontend.tintuc1');
+});
+
+Route::get('/khampha/tintuc2', function () {
+    return view('frontend.tintuc2');
+});
+
+Route::get('/khampha/tintuc3', function () {
+    return view('frontend.tintuc3');
+});
+
+Route::get('/khampha/tintuc4', function () {
+    return view('frontend.tintuc4');
+});
+
 Route::get('/giohang', function () {
     return view('frontend.giohang');
 });
