@@ -6,7 +6,7 @@
         <div class="container">
             <a href="{{ url('/') }}">Trang chủ</a>
             &nbsp; / &nbsp;
-            <a href="">{{ $product->realtionToCategory->name }}</a>
+            <a href="{{url('danhmuc/')}}/{{$product->realtionToCategory->id}}">{{ $product->realtionToCategory->name }}</a>
             &nbsp; / &nbsp;{{ $product->name }}
         </div>
     </div>

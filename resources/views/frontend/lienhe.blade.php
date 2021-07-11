@@ -4,9 +4,9 @@
 
 <div class="wrap-title">
     <div class="container">
-        <a href="">Trang chủ</a>
+        <a href="{{url('/')}}">Trang chủ</a>
             &nbsp; / &nbsp;
-        <a href="">Dịch vụ</a>
+        <a href="{{url('/lienhe')}}">Lien he</a>
     </div>
 </div>
 <div class="wrap">
