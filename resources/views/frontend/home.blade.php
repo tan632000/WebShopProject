@@ -39,6 +39,7 @@
                     @endforeach
                 </div>
             </div>
+            {{$smartProducts->links()}}
             <br>
             <div class="box-2">
                 <div class="title1">
@@ -52,13 +53,14 @@
                                         src="{{ asset('uploads/product_images/') }}/{{ $livingProduct->image }}"
                                         alt=""></a>
                             </div>
-                            <h3><a>{{ $livingProduct->long_description }}</a></h3>
+                            <h3><a href="{{ route('product_details', ['id' => $livingProduct->id]) }}">{{ $livingProduct->name }}</a></h3>
                             <div class="lable-0">{{ $livingProduct->short_description }}</div>
                             <div class="price">{{ number_format($livingProduct->price) }} VND</div>
                         </div>
                     @endforeach
                 </div>
             </div>
+            {{$livingProducts->links()}}
         </div>
     </div>
 @endsection

@@ -27,7 +27,7 @@ class CategoryController extends Controller
         return redirect('/category/add')->with('message_add_cat','Category Added Successfully');
     }
     public function manage_category(){
-        $categories =  Category::paginate(10);
+        $categories =  Category::paginate(12);
         return view('dashboard/category/manage_category',['categories'=> $categories]);
     }
     public function category_unpublish($id){

@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 class FrontendController extends Controller
 {
     function index(){
-        $smartProducts = Product::where('category_id', 1)->get();
-        $livingProducts = Product::where('category_id', 2)->get();
+        $smartProducts = Product::where('category_id', 1)->paginate(12);
+        $livingProducts = Product::where('category_id', 2)->paginate(12);
         $category = Category::get();
         return view('frontend/home',[
             'smartProducts' => $smartProducts,
@@ -34,7 +34,7 @@ class FrontendController extends Controller
     }
 
     public function shop_product_view(){
-        $products =  Product::where('status',1)->paginate(10);
+        $products =  Product::where('status',1)->paginate(12);
         return view('frontend/shop_page',['products'=>$products])->with(compact('products'));
     }
 
