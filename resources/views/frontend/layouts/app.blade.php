@@ -54,10 +54,10 @@
                     </div>
                     @if (Session::get('customer_id'))
                         <li>
-                            <a href="{{route('logout_submit')}}">Logout</a>
+                            <a class="css-log" href="{{route('logout_submit')}}">Logout</a>
                         </li>
                     @else
-                        <li><a href="{{ route('checkout_form') }}">Login</a></li>
+                        <li><a class="css-log" href="{{ route('checkout_form') }}">Login</a></li>
                     @endif
                     <div class="header-icon">
                         <a href="{{url('cart/add')}}">({{ $cartTotalQuantity }})<i class="fa fa-shopping-cart"></i></a>

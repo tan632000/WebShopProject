@@ -154,3 +154,6 @@ a.relative:hover, span.relative:hover{
     background-color: burlywood !important;
     color: red;
 }
+.hidden{
+    display: none;
+}
