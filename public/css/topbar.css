@@ -205,6 +205,10 @@ a.css-log{
 a.css-log:hover{
     background-color: rgb(219, 61, 13);
 }
+li.li-log{
+    align-items: center;
+    margin-top: 15px;
+}
 /* ipad-pro */
 @media only screen and (max-width:1412px) {
     .container-0{

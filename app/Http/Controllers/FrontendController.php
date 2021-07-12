@@ -44,7 +44,7 @@ class FrontendController extends Controller
     }
     
     public function getProductOfCategory($id) {
-        $products = Product::where('category_id', $id)->paginate(3);
+        $products = Product::where('category_id', $id)->paginate(9);
         $category = Category::find($id);
         return view('frontend/danhmuc', [
             'products' => $products,

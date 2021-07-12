@@ -53,11 +53,11 @@
                         <i class="fa fa-search"></i>
                     </div>
                     @if (Session::get('customer_id'))
-                        <li>
+                        <li class="li-log">
                             <a class="css-log" href="{{route('logout_submit')}}">Logout</a>
                         </li>
                     @else
-                        <li><a class="css-log" href="{{ route('checkout_form') }}">Login</a></li>
+                        <li class="li-log"><a class="css-log" href="{{ route('checkout_form') }}">Login</a></li>
                     @endif
                     <div class="header-icon">
                         <a href="{{url('cart/add')}}">({{ $cartTotalQuantity }})<i class="fa fa-shopping-cart"></i></a>
