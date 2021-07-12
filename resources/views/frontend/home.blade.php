@@ -23,7 +23,7 @@
             <br>
             <div class="box-2">
                 <div class="title1">
-                    <h1><a></a>{{ $category[0]->name }}</h1>
+                    <h1><a>{{ $category[0]->name }}</a></h1>
                 </div>
                 <div class="box-21">
                     @foreach ($smartProducts as $smartProduct)
@@ -32,7 +32,7 @@
                                 <a href="{{ route('product_details', ['id' => $smartProduct->id]) }}"><img
                                         src="{{ asset('uploads/product_images/') }}/{{ $smartProduct->image }}" alt=""></a>
                             </div>
-                            <h3><a>{{ $smartProduct->long_description }}</a></h3>
+                            <h3><a href="{{ route('product_details', ['id' => $smartProduct->id]) }}">{{ $smartProduct->name }}</a></h3>
                             <div class="lable-0">{{ $smartProduct->short_description }}</div>
                             <div class="price">{{ number_format($smartProduct->price) }} VND</div>
                         </div>
