@@ -120,7 +120,7 @@ class ProductController extends Controller
         if (!file_exists($path)) {
             mkdir($path, 0777, true);
         }
-        Image::make($request->image)->save($path.$filename, 1);
+        Image::make($request->image)->save($path.$filename, 90);
         return $filename;
     }
 
