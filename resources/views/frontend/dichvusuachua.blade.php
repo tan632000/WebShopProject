@@ -4,11 +4,11 @@
 
 <div class="breadcrumb">
    <div class="container">
-        <a href="">Trang chủ</a>
+          <a href="{{url('/')}}">Trang chủ</a>
             &nbsp; / &nbsp;
-        <a href="">Dịch Vụ</a>
+          <a href="{{url('/dichvu')}}">Dịch vụ</a>
              &nbsp; / &nbsp;
-        <a href="">DV sửa chữa</a>
+          <a href="{{url('/dichvusuachua')}}">DV sửa chữa</a>
           
    </div>
 </div>
@@ -72,7 +72,7 @@
 
                     <h3 class="tinhot" style="font-size: 16px; padding-left: 15px">
                          <i class="fas fa-caret-right"></i>
-                         <a href="" style="color:#808080">Bảo hành sản phẩm</a>
+                         <a href="{{url('/dichvubaohanh')}}" style="color:#808080">Bảo hành sản phẩm</a>
                     </h3>
                 </div>
 

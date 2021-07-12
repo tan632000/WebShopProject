@@ -98,6 +98,25 @@ Route::get('/thanhtoan', function () {
     return view('frontend.thanhtoan');
 });
 
+Route::get('/baomatthongtin', function () {
+    return view('frontend.baomatthongtin');
+});
+
+Route::get('/chinhsachvanchuyen', function () {
+    return view('frontend.chinhsachvanchuyen');
+});
+
+Route::get('/chinhsachdoitra', function () {
+    return view('frontend.chinhsachdoitra');
+});
+
+Route::get('/dichvubaohanh', function () {
+    return view('frontend.dichvubaohanh');
+});
+
+Route::get('/cachthucthanhtoan', function () {
+    return view('frontend.cachthucthanhtoan');
+});
 Route::get('/product/details/{id}',[App\Http\Controllers\FrontendController::class, 'product_details_by_id'])->name('product_details');
 
 //-----------------------------ADMIN ROUTE------------------------------------

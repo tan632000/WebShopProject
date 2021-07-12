@@ -3,11 +3,11 @@
 @section('content')
 <div class="breadcrumb">
    <div class="container">
-        <a href="">Trang chủ</a>
+        <a href="{{url('/')}}">Trang chủ</a>
             &nbsp; / &nbsp;
-        <a href="">Dịch Vụ</a>
+        <a href="{{url('/dichvu')}}">Dịch Vụ</a>
              &nbsp; / &nbsp;
-        <a href="">Mua lại điện thoại</a>
+        <a href="{{url('/mualaidienthoai')}}">Mua lại điện thoại</a>
           
    </div>
 </div>
