@@ -153,10 +153,10 @@
       <div id="company" class="clearfix ">
         <h4>Customer info</h4>
         <div>{{$customer->first_name.' '.$customer->last_name}}</div>
-        <div>Total: ${{$order->total_price}},<br /></div>
+        <div>Total: ${{number_format($order->total_price)}} VND<br /></div>
         <div>{{$customer->address}},<br /></div>
         <div>{{$customer->phone_number}}</div>
-        <div><a href="mailto:company@example.com">{{$customer->email_address}}</a></div>
+        <div><a href="mailto:company@example.com">{{$customer->email}}</a></div>
 
       </div>
       <div id="project">
@@ -164,7 +164,7 @@
         <div><span>Name</span> {{$shipping->full_name}}</div>
         <div><span>Phone </span> {{$shipping->phone_number}}</div>
         <div><span>ADDRESS</span> {{$shipping->address}}</div>
-        <div><span>EMAIL</span> <a href="mailto:john@example.com">{{$shipping->email_address}}</a></div>
+        <div><span>EMAIL</span> <a href="mailto:john@example.com">{{$shipping->email}}</a></div>
         <div><span>DATE</span> {{$shipping->created_at}}</div>
 
       </div>
@@ -189,22 +189,22 @@
                     <td style="width:80px">
                         <img style="width:50%" src="{{asset('uploads/product_images')}}/{{$order_detail->product_image}}" class="w-50" alt="">
                     </td>
-                    <td>{{$order_detail->product_price}}</td>
-                    <td class="qty">{{$order_detail->product_quantity}}</td>
-                    <td class="total">{{$order_detail->product_quantity*$order_detail->product_price}}</td>
+                    <td>{{$order_detail->price}}</td>
+                    <td class="qty">{{$order_detail->quantity}}</td>
+                    <td class="total">{{number_format($order_detail->quantity*$order_detail->price)}} VND</td>
                   </tr>
             @endforeach
           <tr>
             <td colspan="5">SUBTOTAL</td>
-            <td class="total">$ {{$order->total_price}}</td>
+            <td class="total">{{number_format($order->total_price)}} VND</td>
           </tr>
           <tr>
             <td colspan="5">TAX 0%</td>
-            <td class="total">${{$order->total_price}}</td>
+            <td class="total">{{number_format($order->total_price)}} VND</td>
           </tr>
           <tr>
             <td colspan="5" class="grand total">GRAND TOTAL</td>
-            <td class="grand total">$ {{$order->total_price}}</td>
+            <td class="grand total">{{number_format($order->total_price)}} VND</td>
           </tr>
         </tbody>
       </table>

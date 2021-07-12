@@ -1,7 +1,12 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-
+@if (session('updated_shipping'))
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        {{session('updated_shipping')}}
+    </div>
+    @endif
 <div class="container">
     <div class="row">
         <div class="col-md-8 mx-auto">

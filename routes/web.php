@@ -121,14 +121,14 @@ Route::prefix('product')->group(function () {
 
 // CART ROUTE
 Route::prefix('cart')->group(function () {
-    Route::post('/add', [App\Http\Controllers\ProductController::class, 'product_add_to_cart'])->name('add_to_cart');
-    Route::get('/remove/{id}', [App\Http\Controllers\ProductController::class, 'cart_remove_item_pro_id'])->name('cart_remove_item');
-    Route::post('/update', [App\Http\Controllers\ProductController::class, 'cart_update_item_pro_id'])->name('cart_update');
+    Route::get('/add', [App\Http\Controllers\CartController::class, 'list_cart'])->name('list_cart');
+    Route::post('/add', [App\Http\Controllers\CartController::class, 'product_add_to_cart'])->name('add_to_cart');
+    Route::get('/remove/{id}', [App\Http\Controllers\CartController::class, 'cart_remove_item_pro_id'])->name('cart_remove_item');
+    Route::post('/update', [App\Http\Controllers\CartController::class, 'cart_update_item_pro_id'])->name('cart_update');
 });
 
 // CHECKOUT ROUTE
 Route::prefix('checkout')->group(function () {
-    Route::get('/cart', [App\Http\Controllers\CheckoutController::class, 'list_cart'])->name('list_cart');
     Route::get('/form', [App\Http\Controllers\CheckoutController::class, 'checkout_form_view'])->name('checkout_form');
     Route::get('/shipping', [App\Http\Controllers\CheckoutController::class, 'checkout_shipping_form'])->name('shipping_form');
     Route::post('/shipping', [App\Http\Controllers\CheckoutController::class, 'save_shipping_info'])->name('save_shipping');
@@ -140,7 +140,7 @@ Route::prefix('checkout')->group(function () {
 Route::prefix('customer')->group(function () {
     Route::post('login', [App\Http\Controllers\CheckoutController::class, 'loging_customer'])->name('customer_login');
     Route::post('signup', [App\Http\Controllers\CheckoutController::class, 'customer_signup'])->name('customer_signup');
-    Route::post('logout', [App\Http\Controllers\CheckoutController::class, 'logout_customer'])->name('logout_submit');
+    Route::get('logout', [App\Http\Controllers\CheckoutController::class, 'logout_customer'])->name('logout_submit');
 });
 
 //  ORDER ROUTE
