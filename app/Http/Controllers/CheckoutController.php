@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Session;
 
 class CheckoutController extends Controller
 {
-    public function list_cart(Request $request) {
-        return view('frontend.checkout.giohang');
-    }
-
     public function checkout_form_view(){
         return view('frontend.checkout.checkout_form');
     }
@@ -33,12 +29,10 @@ class CheckoutController extends Controller
         $customer->password = bcrypt($request->password);
         $customer->address = $request->address;
         $customer->save();
-
-        Session::put(['customer_id'=>$customer->id]);
-        Session::put(['customer_name'=>$customer->first_name.' '.$customer->last_name]);
-
-        Mail::to($customer->email)->send(new SendCustomer($customer));
-        return redirect('shipping_form');
+        Session::put(['customer_id' => $customer->id]);
+        Session::put(['customer_name' => $customer->first_name.' '.$customer->last_name]);
+        // Mail::to($customer->email)->send(new SendCustomer($customer));
+        return redirect('/');
     }
 
     public function checkout_shipping_form(){
@@ -55,7 +49,7 @@ class CheckoutController extends Controller
         $shipping->save();
 
         Session::put(['shipping_id'=>$shipping->id]);
-        return redirect('checkout_payment');
+        return back()->with('updated_shipping', 'Update Shipping Infor Successfully');
     }
 
     public function checkout_payment_form(){
@@ -63,7 +57,7 @@ class CheckoutController extends Controller
     }
 
     public function save_order_info(Request $request){
-        if($request->payment_type == 'Cash'){
+        if($request->payment_type === 'Cash'){
             $order = new Order();
             $order->customer_id = Session::get('customer_id');
             $order->shipping_id = Session::get('shipping_id');
@@ -79,7 +73,7 @@ class CheckoutController extends Controller
                 $orderDetail->order_id = $order->id;
                 $orderDetail->product_id = $all_cart_product->id;
                 $orderDetail->product_name = $all_cart_product->name;
-                $orderDetail->product_image = $all_cart_product->attributes->product_image;
+                $orderDetail->product_image = $all_cart_product->attributes->image;
                 $orderDetail->product_price = $all_cart_product->price;
                 $orderDetail->product_quantity = $all_cart_product->quantity;
                 $orderDetail->save();
@@ -91,7 +85,8 @@ class CheckoutController extends Controller
 
     public function logout_customer()
     {
-        Session::forget(['customer_id','customer_name','shipping_id']);
+        Session::forget(['customer_id','customer_name','shipping_id','total_price']);
+        CartFacade::clear();
         return redirect('/');
 
     }
@@ -102,7 +97,7 @@ class CheckoutController extends Controller
             if (password_verify ($request->password , $customer->password ))
             {
                 session(['customer_id' => $customer->id,'customer_name'=> $customer->first_name.' '.$customer->last_name]);
-                return redirect('shipping_form');
+                return redirect('/');
             }
             else
             {

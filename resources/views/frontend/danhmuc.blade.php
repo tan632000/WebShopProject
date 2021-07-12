@@ -23,7 +23,7 @@
                         </div>
                         <h3><a href="{{ route('product_details', ['id' => $product->id]) }}">{{$product->name}}</a></h3>
                         <div class="lable-0">{{$product->short_description}}</div>
-                        <div class="price">{{$product->price}} dong</div>
+                        <div class="price">{{number_format($product->price)}} VND</div>
                     </div>
                 @endforeach
             </div>

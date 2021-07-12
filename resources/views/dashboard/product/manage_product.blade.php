@@ -38,7 +38,7 @@
                 <td>{{$product->name}}</td>
                 <td>{!!$product->realtionToCategory->name!!}</td>
                 <td>{{$product->short_description}}</td>
-                <td>{{$product->price}}</td>
+                <td>{{number_format($product->price)}}</td>
                 <td>
                     <img src="{{asset('uploads/product_images')}}/{{$product->image}}" width="100" height="auto" alt="">
                 </td>
@@ -91,7 +91,7 @@
                 <td>{{$softDeleteProduct->name}}</td>
                 <td>{!!$softDeleteProduct->realtionToCategory->category_name!!}</td>
                 <td>{{$softDeleteProduct->short_description}}</td>
-                <td>{{$softDeleteProduct->price}}</td>
+                <td>{{number_format($softDeleteProduct->price)}}</td>
                 {{--  <td>
                     <img src="{{asset('uploads/product_images')}}/{{$softDeleteProduct->product_image}}" class="img-fluid w-50" alt="">
                 </td>  --}}

@@ -15,7 +15,7 @@ Order details
                 </tr>
                 <tr>
                     <th>Ordet Total </th>
-                    <td>$ {{$order->total_price}}</td>
+                    <td>{{number_format($order->total_price)}} VND</td>
                 </tr>
                 <tr>
                     <th>Order Status </th>
@@ -50,7 +50,7 @@ Order details
                 </tr>
                 <tr>
                     <th>Email Address </th>
-                    <td>{{$customer->email_address}}</td>
+                    <td>{{$customer->email}}</td>
                 </tr>
                 <tr>
                     <th>Address </th>
@@ -73,7 +73,7 @@ Order details
                 </tr>
                 <tr>
                     <th>Email Address </th>
-                    <td>{{$shipping->email_address}}</td>
+                    <td>{{$shipping->email}}</td>
                 </tr>
                 <tr>
                     <th>Address </th>
@@ -106,9 +106,9 @@ Order details
                             <td  style="width:15%">
                                 <img class="w-50" src="{{asset('uploads/product_images')}}/{{$order_detail->product_image}}" alt="">
                             </td>
-                            <td>{{$order_detail->product_price}}</td>
+                            <td>{{number_format($order_detail->product_price)}} VND</td>
                             <td>{{$order_detail->product_quantity}}</td>
-                            <td>$ {{$order_detail->product_price*$order_detail->product_quantity}}</td>
+                            <td>{{number_format($order_detail->product_price*$order_detail->product_quantity)}} VND</td>
                         </tr>
                     @endforeach
                 </tbody>

@@ -52,8 +52,15 @@
                         <input type="text" placeholder="search">
                         <i class="fa fa-search"></i>
                     </div>
+                    @if (Session::get('customer_id'))
+                        <li>
+                            <a href="{{route('logout_submit')}}">Logout</a>
+                        </li>
+                    @else
+                        <li><a href="{{ route('checkout_form') }}">Login</a></li>
+                    @endif
                     <div class="header-icon">
-                        <a href="{{url('checkout/cart')}}"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="{{url('cart/add')}}">({{ $cartTotalQuantity }})<i class="fa fa-shopping-cart"></i></a>
                     </div>
                 </div>
                 <div class="header-2">
@@ -74,10 +81,14 @@
                                             <a href="{{ url('/khampha/kienthuc') }}"><strong>Kien thuc</strong></a>
                                             <div>
                                                 <ul>
-                                                    <li><a href="{{url('/khampha/kienthuc1')}}">Kien thuc 1</a></li>
-                                                    <li><a href="{{url('/khampha/kienthuc2')}}">Kien thuc 2</a></li>
-                                                    <li><a href="{{url('/khampha/kienthuc3')}}">Kien thuc 3</a></li>
-                                                    <li><a href="{{url('/khampha/kienthuc4')}}">Kien thuc 4</a></li>
+                                                    <li><a href="{{ url('/khampha/kienthuc1') }}">Kien thuc 1</a>
+                                                    </li>
+                                                    <li><a href="{{ url('/khampha/kienthuc2') }}">Kien thuc 2</a>
+                                                    </li>
+                                                    <li><a href="{{ url('/khampha/kienthuc3') }}">Kien thuc 3</a>
+                                                    </li>
+                                                    <li><a href="{{ url('/khampha/kienthuc4') }}">Kien thuc 4</a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>

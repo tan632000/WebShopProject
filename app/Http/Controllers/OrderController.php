@@ -40,8 +40,8 @@ class OrderController extends Controller
         $order_details = OrderDetail::where('order_id',$order->id)->get();
 
         $pdf = PDF::loadView('dashboard.order.order_invoice_download',compact('order','customer','shipping','order_details'));
-        return $pdf->download('demo.pdf');
         CartFacade::clear();
+        return $pdf->download('demo.pdf');
         return redirect('/');
     }
 }

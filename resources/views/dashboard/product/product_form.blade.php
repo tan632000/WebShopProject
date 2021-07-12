@@ -70,7 +70,7 @@ Add Product
     <div class="form-group row">
         <label for="price" class="col-sm-2 col-form-label">Product Price</label>
         <div class="col-sm-10">
-            <input type="text" name="price" value="{{old('price')}}" class="form-control " id="price">
+            <input type="text" name="price" value="{{number_format(old('price'))}}" class="form-control " id="price">
             @foreach ($errors->get('price') as $message )
             <span class="text-danger">{{$message}}</span>
               @endforeach

@@ -34,7 +34,7 @@
                             </div>
                             <h3><a>{{ $smartProduct->long_description }}</a></h3>
                             <div class="lable-0">{{ $smartProduct->short_description }}</div>
-                            <div class="price">{{ $smartProduct->price }} dong</div>
+                            <div class="price">{{ number_format($smartProduct->price) }} VND</div>
                         </div>
                     @endforeach
                 </div>
@@ -54,7 +54,7 @@
                             </div>
                             <h3><a>{{ $livingProduct->long_description }}</a></h3>
                             <div class="lable-0">{{ $livingProduct->short_description }}</div>
-                            <div class="price">{{ $livingProduct->price }} dong</div>
+                            <div class="price">{{ number_format($livingProduct->price) }} VND</div>
                         </div>
                     @endforeach
                 </div>
