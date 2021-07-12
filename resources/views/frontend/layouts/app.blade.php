@@ -120,10 +120,10 @@
             @yield('content')
         </div>
         <div class="footer">
-            <div class="footer_info" style="background-image: url({{ asset('images/background_footer_info.jpg') }})">
+            <div class="footer_info" style="background-image: url({{ asset('images/background_footer_info.jpg') }})" >
                 <div class="container">
-                    <div class="row">
-                        <div class="col-5">
+                    <div class="row"style="margin-left: 15px">
+                        <div class="col-sm-5 col-xs-12">
                             <div class="ft-dm"> LIÊN HỆ</div>
                             <br>
                             <div class="ft-address">
@@ -156,7 +156,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col-3 ">
+                        <div class="col-sm-3  col-xs-12">
                             <div class="ft-dm"> VỀ CHÚNG TÔI</div>
                             <div class="tintuc" style="font-size: 13px;">
                                 <br>
@@ -165,17 +165,17 @@
                                 <span><strong> Tin tức</strong></span>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-xs-12">
                             <div></div>
                             <div class="logo">
                                 <div class="row">
-                                    <div class=" col-3 logo_fb">
+                                    <div class=" col-sm-3 col-xs-12 logo_fb">
                                         <div class="fb">
                                             <img src="{{ asset('images/logoFB.png') }}" alt="logo facebook"
                                                 style="height: 60px; width: 60px;" class="imgFB">
                                         </div>
                                     </div>
-                                    <div class="col-9 info_fb">
+                                    <div class="col-sm-9 col-xs-12 info_fb">
                                         <div style="padding: 10px 0px 5px 0px;">LUXURY HANOI</div>
                                         <div class="borderLikePage">
                                             <div class="LikePage">
@@ -195,10 +195,11 @@
                     </div>
                 </div>
             </div>
-            <div class="footer service">
+            <br>
+            <div class="footer service" >
                 <div class="container">
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row" style="margin-left: 15px" >
+                        <div class="col-sm-3 col-xs-12">
                             <div> DỊCH VỤ THANH TOÁN</div>
                             <div class="payments">
                                 <div class="payment">
@@ -217,7 +218,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-3 col-xs-12">
                             <div> DỊCH VỤ GIAO HÀNG</div>
                             <div class="delivers">
                                 <div class="deliver">
@@ -230,7 +231,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-3 col-xs-12">
                             <div> KẾT NỐI LUXURYHANOI</div>
                             <div class="information">
                                 <div>
@@ -251,13 +252,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-sm-3 col-xs-12">
                             <div> ĐĂNG KÝ</div>
                             <div>
                                 <img src="{{ asset('images/boNgoaiThuong.png') }}" alt="money" height="40px"
                                     width="120px">
                             </div>
                         </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <p style="text-align: center ; font-weight: bold;">Copyright © 2021 luxuryhanoi.vn</p>
                     </div>
                 </div>
             </div>
