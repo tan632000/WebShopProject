@@ -2,7 +2,7 @@
 
 .box-new {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .box-new1 {
@@ -10,12 +10,12 @@
     font-size: 12px;
     margin: 10px;
 }
-
+/* 
 .box-img {
     display: flex;
     align-items: center;
     justify-content: center
-}
+} */
 
 .box-new1 .box-img {
     height: 50%;
@@ -40,7 +40,9 @@
     color: black;
     text-decoration: none;
 }
-
+.box-new a:hover{
+    text-decoration: underline;
+} 
 
 /* lien hệ sửa chữa */
 
@@ -49,7 +51,7 @@
     text-decoration: none;
 }
 
-h3 a {
+h3.tinhot a {
     font-size: 20px;
     margin-bottom: 15px;
     color: #000;

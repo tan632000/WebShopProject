@@ -27,9 +27,9 @@
                 </div>
 
                 <div class="box-new1">
-                    <div class="box-img">
+                    <!-- <div class="box-img">
                         <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt="" style=" width: 200px; height :200px ;" ></a>
-                    </div>
+                    </div> -->
                     <h3><a href="{{url('/mualaidienthoai')}}">Mua lại điện thoại Vertu cũ đã qua sử dụng</a></h3>
                 </div> 
                 
@@ -50,9 +50,9 @@
                 </div>
 
                 <div class="box-new1">
-                    <div class="box-img">
+                    <!-- <div class="box-img">
                         <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt=""></a>
-                    </div>
+                    </div> -->
                     <h3><a href="{{url('/dichvubaohanh')}}">Dịch vụ bảo hành </a></h3>
                 </div>
 
