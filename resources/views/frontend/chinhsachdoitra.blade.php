@@ -210,7 +210,7 @@
                           
                      </div>
                      <p class="detail" style="text-align: right;">
-                          <a href="">[Quay lại]</a>
+                          <a href="{{url('/dichvu')}}">[Quay lại]</a>
                      </p>
                      <br>
                      <br>
