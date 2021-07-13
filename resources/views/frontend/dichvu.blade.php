@@ -30,7 +30,7 @@
                     <!-- <div class="box-img">
                         <a href=""><img src="{{ asset('images/vertu6.jpg') }}" alt="" style=" width: 200px; height :200px ;" ></a>
                     </div> -->
-                    <h3><a href="{{url('/mualaidienthoai')}}">Mua lại điện thoại Vertu cũ đã qua sử dụng</a></h3>
+                    <h3><a href="{{url('/mualaidienthoai')}}">Mua lại điện thoại cũ đã qua sử dụng</a></h3>
                 </div> 
                 
                 <div class="box-new1">

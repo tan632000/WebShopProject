@@ -15,7 +15,7 @@
      <div class="container">
            <div class="boxmain">
                 <div class="gach1">
-                     <h1 class="titlemain">Mua lại điện thoại Vertu cũ đã qua sử dụng</h1>
+                     <h1 class="titlemain">Mua lại điện thoại cũ đã qua sử dụng</h1>
                 </div>
 
                 <div class="padd4all">
@@ -30,7 +30,7 @@
                           </span>
                              
                      <p class="detail" style="text-align: right;">
-                          <a href="">[Quay lại]</a>
+                          <a href="{{url('/dichvu')}}">[Quay lại]</a>
                      </p>
                      <br>
                      <br>
